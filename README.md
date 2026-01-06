@@ -48,21 +48,3 @@ Interestingly, the best tuned configuration performed better **without** `class_
 
 > For a fuller picture (especially for rare labels), also report **micro/macro F1** and/or **average precision**.
 
----
-
-## Repository Structure (suggested)
-
-```text
-.
-├── data/                      # optional local data directory (not committed)
-├── notebooks/                 # exploratory notebooks
-├── src/
-│   ├── preprocess.py          # cleaning, label alignment, splitting
-│   ├── train_baseline.py      # baseline pipeline training
-│   ├── tune_model.py          # RandomizedSearchCV tuning
-│   ├── evaluate.py            # metrics, reports, plots
-│   └── utils.py
-├── results/                   # saved models, metrics, figures
-├── requirements.txt
-└── README.md
-
