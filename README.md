@@ -45,6 +45,3 @@ Evaluation uses **label-wise accuracy = 1 − Hamming loss**, which measures cor
 - **Tuned label-wise accuracy (1 − Hamming loss): 0.990**
 
 Interestingly, the best tuned configuration performed better **without** `class_weight="balanced"`. A plausible explanation is that weighting can make the model more eager to predict rare labels, which may increase **false positives** and slightly reduce overall label-level correctness in some settings.
-
-> For a fuller picture (especially for rare labels), also report **micro/macro F1** and/or **average precision**.
-
